@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--==================== UNICONS ====================-->
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    
+    <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="../asset/css/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">" >
+
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>BestMate Hotel Paradise</title>
+
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><h2 class="section__title">BestMate Hotel Paradise</h2></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid"> 
+                    
+                    <li class="nav__item">
+                        <a href="../index.html#home" class="nav__link">
+                        <i class="uil uil-estate nav__icon"></i> Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#about" class="nav__link">
+                        <i class="uil uil-user nav__icon"></i> About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#service" class="nav__link">
+                            <i class="uil uil-airplay nav__icon"></i> Services</a>
+                            
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#review" class="nav__link">
+                            <i class="uil uil-wrench nav__icon"></i> Reviews</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="../index.html#contact" class="nav__link">
+                            <i class="uil uil-phone nav__icon"></i> Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../index.html#location" class="nav__link">
+                            <i class="uil uil-file-info-alt nav__icon"></i>Location</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="FAQ.html" class="nav__link">
+                            <i class="uil uil-file-info-alt nav__icon"></i> FAQ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">
+                            <i class="uil uil-smile-squint-wink-alt nav__icon button__icon"></i> Login</a>
+                    </li>
+                        
+                </ul> 
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+                
+            </div> 
+            <div class="nav__btns">
+                <!-- Theme change btns -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-list-ui-alt"></i></div>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+  
+      
+        <!------------- Payment page ----------------->
+        <section class="section">   
+
+            <h1 id="petquerytitle">Payment Form</h1>
+            <!-- do not change class name: it follows the format of petquery.html -->
+            <div class="petformcontainer maincontainer-query form-control ">
+            
+            <!-- Create Form -->
+            <form class="petqueryform" action="thankyou_payment.html">
+
+                <p id="ps" style="font-size: 12px; padding-left: 20px;">All transactions are secure and encrypted.</p>
+
+                <div class="petformcontainer">
+
+                        <h3>Billing Address</h3>    
+
+                        <form class="petqueryform">
+                            <select id="acc" name="pets" style="width:40%;" onchange="javascript: showhide_others();">
+                                <option value="Other">I have a new billing address</option>
+                                <option value="myaccount">Use my account's details</option>
+
+                            </select>
+                        </form>  
+
+
+                        <div style="display: block;" class="billingaddress form-control" id="billingaddress">
+                            
+                            <div class="entry">
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            </div>
+
+                            <div class="entry">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                            </div>
+
+                            <div class="entry">
+                                
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+        
+                            </div>
+
+                            <div class="entry">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+                            </div>
+
+                            <div class="entry">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="NY">
+                            </div>
+    
+                            <div class="entry">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                        
+                            <style> 
+                                label {
+                                    display: table-cell; 
+                                    width: 100px;
+                                    float: left;
+                                }
+                            </style>
+
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h3>Payment</h3>
+                        <label for="fname" style="font-size: 13px;">Accepted Cards</label>
+                        
+
+                        <d style="padding: 0.2em;"></d>
+
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    
+
+                        <div class="nameoncard form-control">   
+                            <label for="cname">Name on Card: </label>
+                            <input type="text" id="cname" name="cardname" placeholder="John Doe">
+                        </div>
+
+
+                        <div class="creditcard form-control">
+                            <label for="ccnum">Credit card number: </label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        </div>
+
+                        <div class="expiry form-control">   
+
+                            <label for="expmonth">Exp. Month:</label> 
+                            <input type="month" id="expmonth" name="expmonth" placeholder="September">
+    
+                            <br>
+                        
+                            <label for="expyear">Exp. Year: </label>
+                            <input type="number" id="expyear" name="expyear" min="2022" max="2050" placeholder="2022">
+
+                        </div>
+                      
+                        <div class="cvv form-control">
+                            <label for="cvv">CVV: </label>
+                            <input style="width: 100px;"id="cvv" type="text" placeholder="000" required pattern="\d{3}" title="must be 3 digits"/>
+                            <br/>
+                        </div>
+
+                        <style>
+                            #expmonth {
+                                font-size: 12px;
+                                padding: 5px;
+                            }
+
+                            #expyear, #cvv {
+                                padding: 5px;
+                                font-size: 15px;
+                            }
+
+                            .expiry {
+                                width: 250px;
+                            }
+                        </style>
+
+                        <!-- SUBMIT button -->
+                        <div id="buttons">
+    
+                            <button type="submit" id="button2" class="button login__button button--flex" style="width: 400px; font-size: 17px;margin-top: 20px;">
+                                Confirm
+                                <i class="uil uil-message button__icon"></i>
+                            </button> 
+                        </div>
+
+                </div>
+            </form>
+
+            <form action="checkin.html">
+                <button type="submit" id="button1" class="button login__button button--flex" style="font-size: 17px;">
+                    <i class="uil uil-arrow-circle-left button__icon"></i>
+                    Previous
+                </button> 
+            </form>
+
+        </div>
+
+
+        <script>
+            function showhide_others(){ 
+                // others 
+                if (document.getElementById('acc').value == 'Other') {
+                    document.getElementById('billingaddress').style.display = 'block';                           
+                }
+                else{
+                    document.getElementById('billingaddress').style.display = 'none';
+                }
+            }
+        </script>
+
+        <!-- the input text boxes css -->
+        <style>
+            select {
+                border-radius: 1px;
+                border-radius: 1em;
+                padding: 6px;
+            }
+
+            input[type=text] {
+                width: 60%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            textarea {
+                resize: vertical;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                padding: 12px;
+                width: 85%;
+            }
+        </style>
+
+
+        </section>    
+       
+    </main>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bag">
+            <div class="footer__container container grid">
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="../index.html#about" class="footer__link">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="../index.html#review" class="footer__link">Reviews</a>
+                    </li>
+                  
+                    <li>
+                        <a href="../index.html#contact" class="footer__link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#location" class="footer__link">Location</a>
+                    </li>
+                </ul>
+                <br>
+                <p id="fineprint" style="color:white" style="text-align: center;">Copyright ©2022 | All Rights Reserved</p>
+        </div>
+        
+        
+    </footer>
+    <!--==================== SWIPER JS ====================-->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="asset/js/main.js"></script>
+     <!--==================== MAIN JS ====================-->
+    <script src="asset/js/student.js"></script>
+    
+    
+</body>
+</html>
